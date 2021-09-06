@@ -2,17 +2,17 @@ const inputBox = document.getElementById("inputBox");
 const inputButton = document.getElementById("inputButton");
 const allTodos = document.getElementById("all-todo-list");
 
-let todoList = [];
+const todoList = [];
 
 const deleteTodo = (element) => {
   const item = element.target;
-  const itemId = +item.getAttribute("data-list-index");
-  todoList = todoList.filter((_, index) => index !== itemId);
+  const itemIndex = parseInt(item.getAttribute("data-list-index"));
+  todoList.splice(itemIndex, 1);
   showResult();
 };
 
 const showResult = () => {
-  allTodos.textContent = "";
+  allTodos.innerHTML = "";
   const listElements = document.createElement("ol");
   todoList.forEach((item, index) => {
     const listElement = document.createElement("li");
