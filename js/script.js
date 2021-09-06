@@ -8,7 +8,6 @@ const deleteTodo = (element) => {
   const item = element.target;
   const itemId = +item.getAttribute("data-list-index");
   todoList = todoList.filter((_, index) => index !== itemId);
-  console.log(todoList);
   showResult();
 };
 
@@ -27,6 +26,10 @@ const showResult = () => {
 
 inputButton.addEventListener("click", () => {
   const inputText = inputBox.value;
+  if (!inputText) {
+    return alert("please enter some text");
+  }
+  inputBox.value = "";
   todoList.push(inputText);
   showResult();
 });
