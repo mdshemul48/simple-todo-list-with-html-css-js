@@ -2,6 +2,7 @@
 
 * {
   margin: 0;
+  padding: 0;
 }
 
 body {
@@ -47,8 +48,12 @@ main {
   font-size: 16px;
   width: 20%;
 }
-
+.todo-list ul {
+  padding-left: 23px;
+}
 .todo-list ul li {
   margin-top: 20px;
-  list-style: none;
+  /* list-style: none; */
+  font-size: 22px;
+  cursor: pointer;
 }
