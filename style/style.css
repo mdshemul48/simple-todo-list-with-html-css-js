@@ -7,7 +7,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  background-image: url("/images/pexels-simon-berger-1323550.jpg");
+  background-image: url("../images/pexels-simon-berger-1323550.jpg");
   background-repeat: no-repeat;
 }
 
@@ -49,10 +49,10 @@ main {
   width: 20%;
 }
 .todo-list ol {
+  margin-top: 20px;
   padding-left: 23px;
 }
 .todo-list ol li {
-  margin-top: 20px;
   font-size: 22px;
   cursor: pointer;
 }
