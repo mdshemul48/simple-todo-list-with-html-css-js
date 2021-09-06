@@ -6,9 +6,39 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  background-image: url("/images/pexels-simon-berger-1323550.jpg");
+  background-repeat: no-repeat;
 }
 
 .heading {
   text-align: center;
   font-size: 50px;
+  color: #512d6d;
+}
+
+main {
+  background-color: aliceblue;
+  padding: 10px;
+  border-radius: 15px;
+  text-align: center;
+  width: 25%;
+  margin: 0 auto;
+}
+.add-todo input {
+  padding: 14px 3px;
+}
+.add-todo button {
+  cursor: pointer;
+  background-color: #4caf50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.todo-list ul li {
+  list-style: none;
 }
